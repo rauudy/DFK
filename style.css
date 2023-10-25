@@ -21,10 +21,12 @@ header {
     font-size: 15px;
 }
 
-.log{
-    width: auto;
-    height: auto;
-}
+/* .logoS{
+    background-image: url(img/logo.png);
+    display: inline-block;
+    width: 15%;
+    height: 8em;
+} */
 
 .cabecera {
     width: 60%;
@@ -36,9 +38,12 @@ header {
     gap: 20em;
 }
 
-.logo img {
-    max-height: 50px;
-    margin-right: 20px;
+.logo  i{
+    background-image: url(img/logo.png);
+    display: inline-block;
+    background-size: cover;
+    width: 4em;
+    height: 4em;
 }
 
 nav ul {
