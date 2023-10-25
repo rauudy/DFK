@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    font-family: sans-serif;
+}
+
+/* Estilos para el navbar */
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.cabecera {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    gap: 20em;
+}
+
+.logo img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: white;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.subopciones {
+    display: none;
+    list-style: none;
+    width: 15em;
+    margin-top: 2em;
+    transition: 0.5s;
+}
+
+.subopciones li {
+    padding: 10px;
+}
+
+.submenu:hover .subopciones {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-left: 4.5em;
+}
+
+
+
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #00ac56;
+}
+
+.estructura {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor {
+    background-image: url('img/principal.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25em;
+}
+
+.cotizacion {
+    text-align: center;
+}
+
+.cotizacion h2 {
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.cotizacion a {
+    text-decoration: none;
+    background-color: #007bffa0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.btnCoti:hover {
+    background-color: #007bff;
+}
+
+/* Estilos para el contenedor de iconos */
+.funciones{
+    width: 100%;
+    background-color: rgb(1, 158, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconos-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgb(1, 158, 1);
+}
+
+/* Estilos para cada icono y su texto */
+.icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.icono i {
+    width: 5em;
+    height: 5em;
+    margin-bottom: 1em;
+    transition: 0.5s;
+}
+
+.icono p {
+    font-size: 1em;
+}
+
+.ic_auditoria,
+.ic_conta,
+.ic_asesor,
+.ic_consultoria {
+    display: inline-block;
+    background-size: cover;
+    width: 2em;
+    height: 2em;
+}
+
+.ic_auditoria {
+    background-image: url('img/auditor1.png');
+}
+
+.ic_conta {
+    background-image: url('img/conta1.png');
+}
+
+.ic_asesor {
+    background-image: url('img/asesor1.png');
+}
+
+.ic_consultoria {
+    background-image: url('img/consultoria1.png');
+}
+
+.op {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* texto */
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.context {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.context h2{
+    font-size: 1.7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.context .parr{
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+
+.context a {
+    text-decoration: none;
+    color: #3d3d3d;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.context a:hover {
+    color: #262626;
+}
+
+/* figc */
+.fin2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #000000;
+}
+
+.confin {
+    width: 60%;
+    height: 30em;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    gap: 50px;
+}
+
+.coll {
+    width: 10em;
+    height: auto;
+    margin-top: 2em;
+}
+
+.coll p {
+    font: 1em sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.coll a {
+    text-decoration: none;
+    color: #505050;
+}
+
+.coll a:hover{
+    color: #5f6f8c;
+}
+
+.foo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #000000;
+}
+
+.pie {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+}
+
+.pie a{
+    text-decoration: none;
+    color: #424d61;
+}
+
+.pie a:hover{
+    color: #5f6f8c;
+}
