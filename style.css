@@ -21,6 +21,11 @@ header {
     font-size: 15px;
 }
 
+.log{
+    width: auto;
+    height: auto;
+}
+
 .cabecera {
     width: 60%;
     display: flex;
