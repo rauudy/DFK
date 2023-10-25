@@ -1,67 +1,83 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     max-width: 100%;
+    font-family: sans-serif;
 }
 
 /* Estilos para el navbar */
 header {
+    width: 100%;
     background-color: white;
-    /* Color de fondo del navbar */
     display: flex;
-    /* Usar un modelo de caja flexible */
     justify-content: center;
-    /* Distribuir elementos alrededor del contenido */
     align-items: center;
-    /* Centrar verticalmente el contenido */
     padding: 10px;
-    /* Añadir espacio alrededor del contenido */
     font-size: 15px;
 }
 
-.cabecera{
+.cabecera {
+    width: 60%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
-    gap: 100px;
+    gap: 20em;
 }
 
 .logo img {
     max-height: 50px;
-    /* Ajusta la altura máxima de tu logo según tu diseño */
     margin-right: 20px;
-    /* Espacio entre el logo y las opciones de menú */
 }
 
 nav ul {
     list-style: none;
     background-color: white;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
-    /* Espacio entre elementos del navbar */
 }
+
+.subopciones {
+    display: none;
+    list-style: none;
+    width: 15em;
+    margin-top: 2em;
+    transition: 0.5s;
+}
+
+.subopciones li {
+    padding: 10px;
+}
+
+.submenu:hover .subopciones {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-left: 4.5em;
+}
+
+
+
 
 nav a {
     text-decoration: none;
     color: #000000;
-    /* Color de texto del enlace */
     font-weight: bold;
-    /* transition: 0.5s; */
-    transition: color 0.5s;
+    transition: color 0.2s;
 }
 
-/* Cambiar el color de fondo del enlace al pasar el mouse sobre él */
 nav a:hover {
-    /* font-size: 20px; */
     color: #00ac56;
 }
 
@@ -72,92 +88,57 @@ nav a:hover {
 
 .contenedor {
     background-image: url('img/principal.jpg');
-    /* Ruta de tu imagen de fondo */
     background-size: cover;
-    /* Ajustar la imagen para cubrir todo el div */
     background-position: center;
-    /* Centrar la imagen */
     color: #fff;
-    /* Color de texto */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 300px;
-    /* Ajusta la altura según tus necesidades */
+    height: 25em;
 }
 
-/* Estilos para el texto superpuesto */
 .cotizacion {
     text-align: center;
-    /* Centrar el texto horizontalmente */
 }
 
 .cotizacion h2 {
     font-size: 30px;
-    /* Tamaño de fuente del texto */
     margin-bottom: 100px;
 }
 
-/* Estilos para el botón */
 .cotizacion a {
     text-decoration: none;
-    background-color: #007bffd5;
-    /* Color de fondo del botón */
+    background-color: #007bffa0;
     color: #fff;
-    /* Color de texto del botón */
     padding: 10px 20px;
-    /* Espacio interno del botón */
     border-radius: 5px;
     margin-top: 10px;
     transition: 0.5s;
 }
 
 .btnCoti:hover {
-    border-radius: 15px;
-    font-size: 20px;
     background-color: #007bff;
 }
 
-
 /* Estilos para el contenedor de iconos */
-/* .iconos-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 10px;
-    background-color: green;
-} */
-
 .funciones{
+    width: 100%;
     background-color: rgb(1, 158, 1);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    position: relative;
     justify-content: center;
-    height: 15em;
 }
 
 .iconos-container {
-    /* width: 50em; */
-    width: 90%;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Divide en cuatro columnas de igual tamaño */
-    /* gap: 20px; */
-    
-    /* Espacio entre las columnas */
-    margin-top: 0px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    /* Espacio superior entre las columnas y la parte superior */
+    margin-top: 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
     background-color: rgb(1, 158, 1);
 }
-
 
 /* Estilos para cada icono y su texto */
 .icono {
@@ -168,85 +149,60 @@ nav a:hover {
     position: relative;
 }
 
-
 .icono i {
     width: 5em;
     height: 5em;
-    /* Tamaño del icono */
     margin-bottom: 1em;
-    /* Espacio entre el icono y el texto */
     transition: 0.5s;
-}
-
-.icono i:hover {
-    width: 5.5em;
-    height: 5.5em;
 }
 
 .icono p {
     font-size: 1em;
 }
 
+.ic_auditoria,
+.ic_conta,
+.ic_asesor,
+.ic_consultoria {
+    display: inline-block;
+    background-size: cover;
+    width: 2em;
+    height: 2em;
+}
 
 .ic_auditoria {
-    display: inline-block;
     background-image: url('img/auditor1.png');
-    /* Ruta de tu imagen PNG */
-    background-size: cover;
-    /* Ajustar la imagen para cubrir todo el ícono */
-    /* width: 2em; */
-    /* Ancho del ícono */
-    /* height: 2em; */
-    /* Alto del ícono */
 }
 
 .ic_conta {
-    display: inline-block;
     background-image: url('img/conta1.png');
-    /* Ruta de tu imagen PNG */
-    background-size: cover;
-    /* Ajustar la imagen para cubrir todo el ícono */
-    width: 2em;
-    /* Ancho del ícono */
-    height: 2em;
-    /* Alto del ícono */
 }
 
 .ic_asesor {
-    display: inline-block;
     background-image: url('img/asesor1.png');
-    /* Ruta de tu imagen PNG */
-    background-size: cover;
-    /* Ajustar la imagen para cubrir todo el ícono */
-    width: 2em;
-    /* Ancho del ícono */
-    height: 2em;
-    /* Alto del ícono */
 }
 
 .ic_consultoria {
-    display: inline-block;
     background-image: url('img/consultoria1.png');
-    /* Ruta de tu imagen PNG */
-    background-size: cover;
-    /* Ajustar la imagen para cubrir todo el ícono */
-    width: 2em;
-    /* Ancho del ícono */
-    height: 2em;
-    /* Alto del ícono */
 }
 
 .op {
     text-decoration: none;
     color: #ffffff;
-    /* Color de texto del enlace */
     font-weight: bold;
     transition: 0.5s;
 }
 
-/* texto  */
+/* texto */
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 .context {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,35 +210,30 @@ nav a:hover {
     text-align: center;
 }
 
-.context h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+.context h2{
     font-size: 1.7em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.context p {
-
-    margin-bottom: 1em;
-    font-size: 1em;
-    margin-bottom: 1em;
+.context .parr{
+    text-decoration: none;
+    margin-bottom: 0.5em;
 }
 
 .context a {
     text-decoration: none;
     color: #3d3d3d;
-    /* Color de texto del enlace */
     font-weight: bold;
     transition: 0.5s;
 }
 
-.context a:hover{
+.context a:hover {
     color: #262626;
 }
 
-/* figc  */
-
-.fin2{
+/* figc */
+.fin2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -292,7 +243,7 @@ nav a:hover {
     background-color: #000000;
 }
 
-.confin{
+.confin {
     width: 60%;
     height: 30em;
     background-color: #000000;
@@ -301,28 +252,30 @@ nav a:hover {
     justify-content: center;
     font-size: 16px;
     gap: 50px;
-    
 }
 
-.coll{
+.coll {
     width: 10em;
     height: auto;
     margin-top: 2em;
 }
 
-.coll p{
+.coll p {
     font: 1em sans-serif;
     font-weight: bold;
     color: #fff;
 }
 
-.coll a{
+.coll a {
     text-decoration: none;
     color: #505050;
 }
 
+.coll a:hover{
+    color: #5f6f8c;
+}
 
-.foo{
+.foo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -330,12 +283,10 @@ nav a:hover {
     text-align: center;
     position: relative;
     background-color: #000000;
-    width: 100%;
 }
 
-.pie{
-    background-color: #000000;
-    width: 90%;
+.pie {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -347,3 +298,6 @@ nav a:hover {
     color: #424d61;
 }
 
+.pie a:hover{
+    color: #5f6f8c;
+}
