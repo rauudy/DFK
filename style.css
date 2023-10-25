@@ -19,6 +19,7 @@ header {
     align-items: center;
     padding: 10px;
     font-size: 15px;
+
 }
 
 /* .logoS{
@@ -196,8 +197,11 @@ nav a:hover {
     background-image: url('img/consultoria1.png');
 }
 
-.op {
+.op{
     text-decoration: none;
+}
+
+.op p{
     color: #ffffff;
     font-weight: bold;
     transition: 0.5s;
